@@ -1,0 +1,34 @@
+{
+  // Specifies the version of the manifest file format
+  "manifest_version": 3,
+
+  // The name of the extension
+  "name": "Colorful Tabs",
+
+  // The version of the extension
+  "version": "1.0",
+
+  // Permissions required by the extension
+  "permissions": [
+      "contextMenus", // Allows the extension to add items to the context menu
+      "tabs",         // Allows the extension to interact with browser tabs
+      "tabGroups",    // Allows the extension to interact with tab groups
+      "scripting"     // Allows the extension to inject scripts into web pages
+  ],
+
+  // Host permissions for the extension to access specific URLs
+  "host_permissions": [
+      "http://*/*",  // Allows access to all HTTP URLs
+      "https://*/*"  // Allows access to all HTTPS URLs
+  ],
+
+  // Background script configuration
+  "background": {
+      "service_worker": "background.js" // Specifies the background script file
+  },
+
+  // Configuration for the browser action (toolbar button)
+  "action": {
+      "default_popup": "popup.html" // Specifies the HTML file for the popup
+  }
+}
