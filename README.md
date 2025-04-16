@@ -2,13 +2,13 @@
 
 ## Overview
 
-The Colorful Tabs extension allows you to add a context menu item to your Edge browser that creates a group consisting of this tab only
-The idea is to mark the current tab and differ from tabs with the same icon
+The Colorful Tabs extension allows you to create and name tab groups directly from your browser toolbar. It helps you organize and identify your tabs by grouping the current tab and assigning it a name and color.
 
 ## Features
 
-- Adds a context menu item "MAKE ME SPECIAL" to the Edge browser.
-- Groups the selected tab into a new tab group.
+- Adds a toolbar button to create tab groups quickly
+- Creates a tab group for the current tab
+- Provides a popup interface to name your tab groups
 
 ## Installation
 
@@ -25,10 +25,15 @@ Enable "Developer mode" (toggle in the bottom left).
 
 Click "Load unpacked" and select your add-on folder.
 
+## Usage
+
+1. Click on the extension icon in the toolbar or use the context menu
+2. Enter a name for your tab group in the popup dialog
+3. Click "OK" to create the named group or "Cancel" to abort
 
 ## Known issues\future plans
 
-### The original idea + known blockers
-- Right click on the tab name in the side panel. Does not work with the current APIs :(
-- Choose the color and title for this API. The chrome.tabGroups.update API does not work for some reason
+### Future Enhancements
+- Add ability to select from multiple colors when creating groups
+- Move to the tab name context
 

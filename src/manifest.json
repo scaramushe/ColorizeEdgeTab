@@ -10,10 +10,11 @@
 
   // Permissions required by the extension
   "permissions": [
-      "contextMenus", // Allows the extension to add items to the context menu
       "tabs",         // Allows the extension to interact with browser tabs
       "tabGroups",    // Allows the extension to interact with tab groups
-      "scripting"     // Allows the extension to inject scripts into web pages
+      "scripting",    // Allows the extension to inject scripts into web pages
+      "windows",      // Add windows permission to create popup windows
+      "contextMenus"  // Allows the extension to add items to the context menu
   ],
 
   // Host permissions for the extension to access specific URLs
@@ -29,6 +30,11 @@
 
   // Configuration for the browser action (toolbar button)
   "action": {
-      "default_popup": "popup.html" // Specifies the HTML file for the popup
+      "default_title": "Make Tab Special",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
   }
 }
